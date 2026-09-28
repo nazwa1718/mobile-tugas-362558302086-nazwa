@@ -1,24 +1,26 @@
 import 'package:flutter/material.dart';
-import 'pages/home_pages.dart';
+
+import 'modul_04/screens/announcement_list_screen.dart';
 
 void main() {
-  runApp(const KantinApp());
+  runApp(const Modul04App());
 }
 
-class KantinApp extends StatelessWidget {
-  const KantinApp({super.key});
+class Modul04App extends StatelessWidget {
+  const Modul04App({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Kantin Kampus',
+      title: 'Portal Pengumuman',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
         useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Colors.blue,
+        ),
       ),
-      home: const HomePage(),
+      home: const AnnouncementListScreen(),
     );
   }
 }
