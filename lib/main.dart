@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'modul_06/modul_06_app.dart';
+import 'pengayaan/modul_11/modul_11_pengayaan_app.dart';
 
 void main() {
-  runApp(const Modul06App());
+  runApp(const Modul11PengayaanApp());
 }

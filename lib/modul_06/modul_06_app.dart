@@ -26,8 +26,8 @@ class _Modul06AppState extends State<Modul06App> {
 
   late final AuthApi _api = widget.api ??
       (Modul06App.lambatSimulasi
-          ? const AuthApi(tunda: Duration(seconds: 2))
-          : const AuthApi());
+          ? AuthApi(tunda: Duration(seconds: 2))
+          : AuthApi());
 
   @override
   Widget build(BuildContext context) {
